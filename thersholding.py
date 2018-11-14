@@ -20,7 +20,7 @@ grayscaled = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 retval2,threshold2 = cv2.threshold(grayscaled,125,255,cv2.THRESH_BINARY)
 threshold3 = 255 - threshold2
 cv2.imshow('original',img)
-cv2.imshow('Otsu threshold',threshold3)
+cv2.imshow('threshold',threshold3)
 path1 = '/media/aniket/D044BBC744BBAF1A/Users/user/test-images2'
 cv2.imwrite(os.path.join(path1, str(i) + '.png'), threshold3)
 #cv2.waitKey(0)
